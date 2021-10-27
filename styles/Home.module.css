@@ -1,0 +1,26 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    4deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.card {
+  position: relative;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.hover:hover .card {
+  transform: scale(1.2);
+}
+.full {
+  height: 200px;
+  object-fit: cover;
+}
